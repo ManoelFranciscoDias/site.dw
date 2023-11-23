@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
 
 
@@ -10,7 +10,7 @@
     --cor4: #000000;
     --cor5: #e7e7e7;
     --cor6: #cccccc;
-    --font1: 'Exo 2', 'arial';
+    --font1:'Alata', sans-serif;
     --cor7: #ffd9f5;
     --cor8: #fc90fc;
     --cor9: #8C390F;
@@ -18,9 +18,14 @@
 
 }
 
-body {
-  background-image: url(img/dcb5359f7f44de44f7aac5b6a7e47922.gif);
+.bannerfoto {
+  width: 100%;
+  height: 800px
 }
+
+
+
+
 
 * {
   font-family: var(--font1);
@@ -36,10 +41,30 @@ h1, a {
   color: var(--cor9);
   text-decoration: none;
   font-family: var(--font1);
+  text-align: center;
 }
 
-a:hover {
-  background: var(--cor10);
+a {
+  position: relative;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--cor9);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
 #logo {
@@ -49,7 +74,7 @@ a:hover {
 
 #header {
   box-sizing: border-box;
-  height: 70px;
+  height: 90px;
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -131,4 +156,14 @@ a:hover {
     transform: rotate(-135deg);
     top: -7px;
   }
+}
+
+
+.logo {
+  height: 70px;
+  width: 230px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: 0 auto;
+  
 }
