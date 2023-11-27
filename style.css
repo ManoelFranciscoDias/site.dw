@@ -23,7 +23,9 @@
   height: 800px
 }
 
-
+body {
+  background-color: #EFD5E9;
+}
 
 
 
@@ -356,7 +358,7 @@ section.slider{
 }
 
 .nav-manual .manual-btn, .nav-auto div{
-  border: 1px solid #ff0054;
+  border: 1px solid var(--cor9);
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
@@ -368,11 +370,11 @@ section.slider{
 }
 
 .nav-manual .manual-btn:hover{
-  background-color: #ff0054;
+  background-color: var(--cor9);
 }
 
 #radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
-  background-color: #ff0054;
+  background-color: var(--cor9);
 }
 
 #radio1:checked ~ .primeiro{
@@ -399,4 +401,19 @@ section.slider{
   .nav-auto, .nav-manual{
       margin-top: 60%;
   }
+}
+
+.mini-header {
+  background-color: #8C390F;
+  width: 100%;
+  height: 30px;
+}
+
+p {
+  color: white;
+}
+
+iframe {
+  margin: 0 auto;
+  border: 2px; background-color: #8C390F;
 }
