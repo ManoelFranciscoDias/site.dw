@@ -13,7 +13,7 @@
   --font1: 'Alata', sans-serif;
   --cor7: #ffd9f5;
   --cor8: #fc90fc;
-  --cor9: #8C390F;
+  --cor9: #412517;
   --cor10: #ffc6f0;
 
 }
@@ -24,7 +24,7 @@
 }
 
 body {
-  background-color: #EFD5E9;
+  background-color: #fafafa;
 }
 
 
@@ -41,7 +41,7 @@ ul {
 
 h1,
 a {
-  color: var(--cor9);
+  color: var(--cor5);
   text-decoration: none;
   font-family: var(--font1);
   text-align: center;
@@ -57,7 +57,7 @@ a::before {
   width: 100%;
   height: 4px;
   border-radius: 4px;
-  background-color: var(--cor9);
+  background-color: var(--cor5);
   bottom: 0;
   left: 0;
   transform-origin: right;
@@ -82,7 +82,7 @@ a:hover::before {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--cor7);
+  background: var(--cor9);
 }
 
 #menu {
@@ -98,7 +98,7 @@ a:hover::before {
 
 #btn-mobile {
   display: none;
-  color: var(--cor9);
+  color: var(--cor5);
 }
 
 @media (max-width: 600px) {
@@ -108,7 +108,7 @@ a:hover::before {
     width: 100%;
     top: 70px;
     right: 0px;
-    background: var(--cor7);
+    background: var(--cor9);
     transition: 0.6s;
     z-index: 1000;
     height: 0px;
@@ -125,7 +125,7 @@ a:hover::before {
   #menu a {
     padding: 1rem 0;
     margin: 0 1rem;
-    border-bottom: 2px solid var(--cor10);
+    border-bottom: 2px solid var(--cor9);
   }
 
   #btn-mobile {
@@ -199,7 +199,7 @@ a:hover::before {
   display: inline-block;
   padding: .75rem 1.25rem;
   border-radius: 10rem;
-  color: #fff;
+  color: #ffffff;
 
   section.slider {
     margin: 0 auto;
@@ -330,8 +330,8 @@ span {
 button {
 
   padding: 5px 15px;
-  background-color: rgb(255, 208, 216);
-  color: var(--cor9);
+  background-color: rgb(122, 64, 72);
+  color: var(--cor5);
   border-radius: 20px;
   transition: background-color 0.3s ease;
 }
